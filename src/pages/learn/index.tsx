@@ -1,7 +1,7 @@
 import Learnimg from "@/assets/learn.png";
 import Button from "@/components/ui/button";
 
-const learn = () => {
+const LearnPage = () => {
   return (
     <div className="text-secondary items-center justify-center text-center flex flex-col gap-4">
       <h2 className="text-xl font-semibold ">
@@ -25,4 +25,4 @@ const learn = () => {
   );
 };
 
-export default learn;
+export default LearnPage;
