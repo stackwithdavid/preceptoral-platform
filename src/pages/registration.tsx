@@ -1,3 +1,5 @@
+import Button from "@/components/ui/button";
+
 // const [form, setForm] = useState({
 //   name: "",
 //   email: "",
@@ -5,7 +7,7 @@
 
 const registration = () => {
   return (
-    <div className="text-secondary w-full max-w-2xl mx-auto p-4 ">
+    <div className="text-secondary  max-w-2xl mx-auto p-4 ">
       <h2 className="font-semibold text-2xl">Registration Form</h2>
       <h4>indicates required question</h4>
       <section className="text-xl">
@@ -80,6 +82,7 @@ const registration = () => {
           />
         </div>
       </section>
+      <Button className="bg-primary text-white">Next</Button>
     </div>
   );
 };

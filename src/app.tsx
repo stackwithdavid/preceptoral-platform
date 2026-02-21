@@ -3,6 +3,7 @@ import Page2 from "@/pages/learn";
 import Page5 from "@/pages/registration";
 import Page4 from "@/pages/training";
 import Welcome from "@/pages/welcome";
+import Page6 from "./pages/course";
 
 import { Toaster } from "react-hot-toast";
 
@@ -24,6 +25,7 @@ const App = () => {
           <Page3 />
           <Page4 />
           <Page5 />
+          <Page6 />
           <Router />
           <Toaster />
         </QueryClientProvider>
