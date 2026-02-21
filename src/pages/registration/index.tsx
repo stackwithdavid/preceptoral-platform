@@ -1,11 +1,4 @@
-import Button from "@/components/ui/button";
-
-// const [form, setForm] = useState({
-//   name: "",
-//   email: "",
-// });
-
-const registration = () => {
+const RegistrationPage = () => {
   return (
     <div className="text-secondary  max-w-2xl mx-auto p-4 ">
       <h2 className="font-semibold text-2xl">Registration Form</h2>
@@ -16,8 +9,6 @@ const registration = () => {
           <input
             type="text"
             placeholder="Enter your first name"
-            // value={form.name}
-            // onChange={(e) => setForm({ ...form, name: e.target.value })}
             className="w-full px-4 py-3 border border-gray-400 rounded-lg text-sm mb-4"
           />
         </div>
@@ -26,8 +17,6 @@ const registration = () => {
           <input
             type="text"
             placeholder="Enter your middle name"
-            // value={form.name}
-            // onChange={(e) => setForm({ ...form, name: e.target.value })}
             className="w-full px-4 py-3 border border-gray-400 rounded-lg text-sm mb-4"
           />
         </div>
@@ -36,18 +25,14 @@ const registration = () => {
           <input
             type="text"
             placeholder="Enter your last name"
-            // value={form.name}
-            // onChange={(e) => setForm({ ...form, name: e.target.value })}
             className="w-full px-4 py-3 border border-gray-400 rounded-lg text-sm mb-4"
           />
         </div>
         <div>
           <p>Email Address</p>
           <input
-            type="text"
+            type="email"
             placeholder="Enter your email address"
-            // value={form.name}
-            // onChange={(e) => setForm({ ...form, name: e.target.value })}
             className="w-full px-4 py-3 border border-gray-400 rounded-lg text-sm mb-4"
           />
         </div>
@@ -56,8 +41,6 @@ const registration = () => {
           <input
             type="text"
             placeholder=""
-            // value={form.name}
-            // onChange={(e) => setForm({ ...form, name: e.target.value })}
             className="w-full px-4 py-3 border border-gray-400 rounded-lg text-sm mb-4"
           />
         </div>
@@ -66,8 +49,6 @@ const registration = () => {
           <input
             type="text"
             placeholder="Enter your phone number"
-            // value={form.name}
-            // onChange={(e) => setForm({ ...form, name: e.target.value })}
             className="w-full px-4 py-3 border border-gray-400 rounded-lg text-sm mb-4"
           />
         </div>
@@ -76,18 +57,13 @@ const registration = () => {
           <input
             type="text"
             placeholder="Type your answer here"
-            // value={form.name}
-            // onChange={(e) => setForm({ ...form, name: e.target.value })}
             className="w-full px-4 py-3 border border-gray-400 rounded-lg text-sm mb-4"
           />
         </div>
       </section>
-      <Button className="bg-primary text-white">Next</Button>
+      {/* <Button className="bg-primary text-white">Next</Button> */}
     </div>
   );
 };
 
-export default registration;
-function useState(_arg0: { name: string; email: string }): [any, any] {
-  throw new Error("Function not implemented.");
-}
+export default RegistrationPage;
