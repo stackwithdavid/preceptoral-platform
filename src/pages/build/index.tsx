@@ -1,9 +1,27 @@
+import Logo from "@/assets/Logo.png";
 import Build from "@/assets/build.png";
 import Button from "@/components/ui/button";
+import { useNavigate } from "react-router";
 
 const build = () => {
+  const navigate = useNavigate();
+
+  const goToLearn = () => {
+    navigate("/learn");
+  };
+
+  const goToTraining = () => {
+    navigate("/training");
+  };
+
   return (
     <div className="flex justify-center items-center flex-col text-secondary">
+      <img
+        src={Logo}
+        alt="Logo"
+        className="absolute top-10 left-50 w-50 object-cover"
+      />
+
       <h2 className="text-xl font-semibold ">Why Join?</h2>
       <h3 className="text-primary font-semibold text-xl">
         Build Real-World Skills
@@ -64,9 +82,19 @@ const build = () => {
         </li>
       </ul>
 
-      <div className="justify-between flex w-full bottom-10">
-        <Button className="left-30 bg-primary text-white">Back</Button>
-        <Button className="right-30 bg-primary text-white">Next</Button>
+      <div className="relative justify-between flex w-full bottom-10">
+        <Button
+          onClick={goToLearn}
+          className="absolute left-30 bg-primary hover:bg-primary/90 text-white"
+        >
+          Back
+        </Button>
+        <Button
+          onClick={goToTraining}
+          className="absolute right-30 bg-primary hover:bg-primary/90 text-white"
+        >
+          Next
+        </Button>
       </div>
     </div>
   );

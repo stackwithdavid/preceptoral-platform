@@ -1,7 +1,14 @@
 import Logo from "@/assets/Logo.png";
 import Button from "@/components/ui/button";
+import { useNavigate } from "react-router";
 
 const WelcomePage = () => {
+  const navigate = useNavigate();
+
+  const goToLearn = () => {
+    navigate("/learn");
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center relative">
       <div className="items-center flex flex-col">
@@ -11,7 +18,10 @@ const WelcomePage = () => {
         <img src={Logo} alt="Logo" className="h-80" />
       </div>
       <div>
-        <Button className="absolute bottom-10 right-30 text-white bg-primary">
+        <Button
+          onClick={goToLearn}
+          className="absolute bottom-10 right-30 text-white bg-primary hover:bg-primary/90"
+        >
           Next
         </Button>
       </div>
